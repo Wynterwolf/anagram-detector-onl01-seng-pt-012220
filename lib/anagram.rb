@@ -1,15 +1,15 @@
 class Anagram
-  attr_accessor :word_to_analyze
+  attr_accessor :array_words
   
-  def initialize(word_to_analyze)
-    @word_to_analyze = word_to_analyze 
+  def initialize(array_words)
+    @array_words = array_words 
   end 
   
-  def match(find_anagram_in_this_string) 
+  def match(find_this) 
 
-    find_anagram_in_this_string.find_all do |word| 
+    find_this.find_all do |word| 
 
-      if word.split("").sort == self.word_to_analyze.split("").sort 
+      if word.split("").sort == self.array_words.split("").sort 
         word 
       end
     end 
