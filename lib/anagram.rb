@@ -2,8 +2,12 @@
 
 class Anagram
   
+  attr_accessor :words
+  
   def initialize(word)
-    @words = words
+    @words = word
+    
+    if 
   end
   
 end
