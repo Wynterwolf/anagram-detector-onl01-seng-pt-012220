@@ -9,10 +9,12 @@ class Anagram
   end
   
   def match(word_array)
-    #in the word array for each word do
-    word_array.select do |word|
-      # a split and a sort, check if matches
-      word.split("").sort == @word.split("").sort
+  
+    word_array.find_all do |word|
+      
+      if word.split("").sort == @word.split("").sort
+        word
+      end
     end
   end
   
