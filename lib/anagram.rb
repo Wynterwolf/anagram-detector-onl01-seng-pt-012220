@@ -6,8 +6,8 @@ class Anagram
   
   def initialize(word)
     @words = word
-    
-    if 
   end
+  
+  
   
 end
